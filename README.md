@@ -7,8 +7,10 @@ Original project site: [http://buymeasoda.github.com/soda-theme/](http://buymeas
 
 ## Design
 
+After :
 ![Soda Dark HiDPI Theme](http://i.imgur.com/UfzCu.png)
 
+Before :
 ![Soda Dark Theme (legacy)](http://i.imgur.com/bc7jp.png)
 
 ## Installation
@@ -23,7 +25,7 @@ You can locate your Sublime Text 2 `Packages` directory by using the menu item `
 
 While inside the `Packages` directory, clone the theme repository using the command below:
 
-    git clone https://github.com/antwan86/soda-theme-hidpi/ "Theme - Soda HiDPI"
+    git clone git://github.com/Antwan86/soda-theme-hidpi.git "Theme - Soda HiDPI"
 
 ### Download Manually
 
@@ -68,15 +70,14 @@ If you'd like to use the syntax highlighting schemes shown in the screenshots:
 * Unzip and place the extracted `tmtheme` files in the Sublime Text 2 `Packages/User` folder
 * Enable the colour scheme via `Preferences -> Color Scheme -> User`
 
-### Code Font
+### Screenshot details
 
-The code font shown in the screenshot is Menlo, font used for UI is Ubuntu
+The code font shown in the screenshot is Menlo, font used in UI is Ubuntu. Windows Aero theme has been modified by IumKit.
 
-## Development
+## Known Issues
 
-Please note, Sublime Text dev builds move quickly and changes can occur with the theme API between releases, so there may be occasions where the theme doesn't quite work with a brand new dev release.
-
-While developing the theme, I have documented some [theme challenges and ideas](https://github.com/buymeasoda/soda-theme/wiki/Theme-challenges-and-ideas) encountered along the way.
+* The tab font is truncated : This seems to be due to a [ST2 bug](http://www.sublimetext.com/forum/viewtopic.php?f=3&t=8889). I chose to leave it this way instead of reducing the font size because this is more readable anyway.
+* Quickpanel font keeps small : This seems to be a [ST2 bug too](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=4852)
 
 ## License
 
