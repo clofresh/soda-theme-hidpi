@@ -14,7 +14,7 @@
         "tab_overlap": 5,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 25,
+        "tab_height": 35,
         "mouse_wheel_switch": false
     },
     {
@@ -68,7 +68,7 @@
         "settings": ["soda_classic_tabs"],
         "content_margin": [3, 4, 3, 3],
         "tab_overlap": 24,
-        "tab_height": 28
+        "tab_height": 38
     },
     // Tab element
     {
@@ -83,7 +83,7 @@
     {
         "class": "tab_control",
         "settings": ["soda_classic_tabs", "show_tab_close_buttons"],
-        "content_margin": [22, 6, 15, 4]
+        "content_margin": [22, -6, 15, -4]
     },
     // Tab hover state
     {
@@ -115,38 +115,38 @@
     {
         "class": "tab_close_button",
         "content_margin": [0, 0],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-inactive.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-inactive@2x.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": 0
+        "layer0.inner_margin": [0,-7, 0, 7]
     },
     {
         "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
-        "content_margin": [8, 8]
+        "content_margin": [12, 12]
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-close.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-close@2x.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-close.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-close@2x.png",
         "layer0.opacity": 1.0
     },
     // Tab dirty button
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-dirty-inactive.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-dirty-inactive@2x.png"
     },
     {
         "class": "tab_close_button",
         "settings": ["!show_tab_close_buttons"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "content_margin": [8, 8]
+        "content_margin": [12, 12]
     },
     {
         "class": "tab_close_button",
@@ -156,34 +156,34 @@
     {
         "class": "tab_close_button",
         "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-dirty.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-dirty@2x.png"
     },
     // Tab highlight button
     {
         "class": "tab_close_button",
         "settings": ["highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-highlight-inactive.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-highlight-inactive@2x.png"
     },
     {
         "class": "tab_close_button",
         "settings": ["highlight_modified_tabs"],
         "parents": [{"class": "tab_control", "attributes": ["dirty", "selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-highlight.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-highlight@2x.png"
     },
     // Tab close button hover
     {
         "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-hover@2x.png"
     },
     // Tab close button pressed
     {
         "class": "tab_close_button",
         "settings": ["show_tab_close_buttons"],
         "attributes": ["pressed"],
-        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-pressed.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/tab-close-pressed@2x.png"
     },
 
 //
@@ -195,7 +195,9 @@
         "fade": true,
         "fg": [170, 170, 170],
         "shadow_color": [25, 25, 25],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, -1],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     {
         "class": "tab_label",
@@ -244,42 +246,42 @@
     // Standard vertical scroll bar
     {
         "class": "scroll_bar_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-vertical.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-vertical@2x.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [2, 6],
+        "layer0.inner_margin": [3, 8],
         "blur": false
     },
     // Standard horizontal scroll bar
     {
         "class": "scroll_bar_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-horizontal.png",
-        "layer0.inner_margin": [6, 2],
+        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-horizontal@2x.png",
+        "layer0.inner_margin": [8, 3],
         "blur": false
     },
     // Standard scroll bar corner
     {
         "class": "scroll_corner_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-corner.png",
-        "layer0.inner_margin": [2, 2],
+        "layer0.texture": "Theme - Soda/Soda Dark/standard-scrollbar-corner@2x.png",
+        "layer0.inner_margin": [3, 3],
         "layer0.opacity": 1.0
     },
     // Standard vertical scroll puck
     {
         "class": "puck_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/standard-puck-vertical.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/standard-puck-vertical@2x.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [0, 10],
-        "content_margin": [8, 12],
+        "layer0.inner_margin": [0, 15],
+        "content_margin": [12, 18],
         "blur": false
     },
     // Standard horizontal scroll puck
     {
         "class": "puck_control",
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Soda/Soda Dark/standard-puck-horizontal.png",
-        "layer0.inner_margin": [10, 0],
-        "content_margin": [12, 8],
+        "layer0.texture": "Theme - Soda/Soda Dark/standard-puck-horizontal@2x.png",
+        "layer0.inner_margin": [15, 0],
+        "content_margin": [18, 12],
         "blur": false
     },
 
@@ -302,7 +304,7 @@
     {
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-scrollbar-vertical.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-scrollbar-vertical@2x.png",
         "layer0.inner_margin": [0, 5],
         "blur": true
     },
@@ -311,7 +313,7 @@
         "class": "scroll_bar_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-scrollbar-horizontal.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-scrollbar-horizontal@2x.png",
         "layer0.inner_margin": [5, 0],
         "blur": true
     },
@@ -319,9 +321,9 @@
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-puck-vertical.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-puck-vertical@2x.png",
         "layer0.inner_margin": [0, 5],
-        "content_margin": [5, 20],
+        "content_margin": [10, 30],
         "blur": true
     },
     // Overlay horizontal puck
@@ -329,9 +331,9 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-puck-horizontal.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-puck-horizontal@2x.png",
         "layer0.inner_margin": [5, 0],
-        "content_margin": [20, 5],
+        "content_margin": [30, 10],
         "blur": true
     },
     // Overlay light puck (for dark content)
@@ -339,14 +341,14 @@
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["dark"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-dark-puck-vertical.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-dark-puck-vertical@2x.png"
     },
     // Overlay light horizontal puck (for dark content)
     {
         "class": "puck_control",
         "settings": ["overlay_scroll_bars"],
         "attributes": ["horizontal", "dark"],
-        "layer0.texture": "Theme - Soda/Soda Dark/overlay-dark-puck-horizontal.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/overlay-dark-puck-horizontal@2x.png"
     },
 
 //
@@ -385,21 +387,27 @@
     // General labels
     {
         "class": "label_control",
-        "color": [204, 204, 204]
+        "color": [204, 204, 204],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     // Text field labels
     {
         "class": "label_control",
         "parents": [{"class": "panel_control"}],
         "shadow_color": [50, 50, 50],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, -1],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     // Button labels
     {
         "class": "label_control",
         "parents": [{"class": "button_control"}],
         "shadow_color": [55, 55, 55],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, -1],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
 
 //
@@ -409,10 +417,10 @@
     // Tooltip container
     {
         "class": "tool_tip_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/tooltip.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/tooltip@2x.png",
         "layer0.inner_margin": [1, 1],
         "layer0.opacity": 0.95,
-        "content_margin": [3, 3]
+        "content_margin": [5, 5]
     },
     // Tooltip content
     {
@@ -427,10 +435,10 @@
     // Status bar container
     {
         "class": "status_bar",
-        "layer0.texture": "Theme - Soda/Soda Dark/status-bar-background.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/status-bar-background@2x.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [8, 4, 8, 4]
+        "content_margin": [12, 6, 12, 6]
     },
     // Status bar button
     {
@@ -443,7 +451,9 @@
         "parents": [{"class": "status_bar"}],
         "color": [150, 150, 150],
         "shadow_color": [25, 25, 25],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, -1],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
 
 //
@@ -453,15 +463,15 @@
     // Sidebar container
     {
         "class": "sidebar_container",
-        "layer0.texture": "Theme - Soda/Soda Dark/sidebar-bg.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/sidebar-bg@2x.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [1, 1, 2, 1],
-        "content_margin": [0, 0, 1, 0]
+        "content_margin": [0, 15, 2, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [8, 3],
+        "row_padding": [12, 6],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false,
@@ -470,7 +480,7 @@
     // Sidebar rows
     {
         "class": "tree_row",
-        "layer0.texture": "Theme - Soda/Soda Dark/sidebar-row-selected.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/sidebar-row-selected@2x.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [1, 1]
     },
@@ -485,6 +495,8 @@
         "class": "sidebar_heading",
         "color": [210, 210, 210],
         "font.bold": true,
+        "font.size": 16.0,
+        "font.face": "Ubuntu",
         "shadow_color": [0, 0, 0],
         "shadow_offset": [0, -1]
     },
@@ -493,7 +505,9 @@
         "class": "sidebar_label",
         "color": [125, 125, 125],
         "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, -1]
+        "shadow_offset": [0, -1],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     // Sidebar folder entry
     {
@@ -528,10 +542,10 @@
     // Sidebar file close
     {
         "class": "close_button",
-        "layer0.texture": "Theme - Soda/Soda Dark/file-close.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/file-close@2x.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": 0,
-        "content_margin": [8, 8]
+        "content_margin": [12, 12]
     },
     {
         "class": "close_button",
@@ -542,31 +556,31 @@
     {
         "class": "close_button",
         "attributes": ["dirty"],
-        "layer0.texture": "Theme - Soda/Soda Dark/file-dirty.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/file-dirty@2x.png",
         "layer0.opacity": 1.0
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/file-dirty-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/file-dirty-selected@2x.png"
     },
     {
         "class": "close_button",
         "attributes": ["dirty"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/file-close.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/file-close@2x.png"
     },
     // Sidebar file close hover
     {
         "class": "close_button",
         "attributes": ["hover"],
-        "layer0.texture": "Theme - Soda/Soda Dark/file-close-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/file-close-hover@2x.png"
     },
     {
         "class": "close_button",
         "parents": [{"class": "tree_row", "attributes": ["hover", "selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/file-close-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/file-close-selected@2x.png"
     },
 
 //
@@ -576,38 +590,38 @@
     // Sidebar group closed
     {
         "class": "disclosure_button_control",
-        "content_margin": [8, 8],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-closed.png",
+        "content_margin": [12, 12],
+        "layer0.texture": "Theme - Soda/Soda Dark/group-closed@2x.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": 0
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-closed-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/group-closed-hover@2x.png"
     },
     {
         "class": "disclosure_button_control",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-closed-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/group-closed-selected@2x.png"
     },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-open.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/group-open@2x.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-open-hover.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/group-open-hover@2x.png"
     },
     {
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/group-open-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/group-open-selected@2x.png"
     },
 
 //
@@ -617,9 +631,9 @@
     // Default button state
     {
         "class": "button_control",
-        "content_margin": [6, 5, 6, 6],
+        "content_margin": [9, 8, 9, 9],
         "min_size": [75, 0],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-large.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-large@2x.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [6, 6]
     },
@@ -627,7 +641,7 @@
     {
         "class": "button_control",
         "attributes": ["pressed"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-large-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-large-on@2x.png"
     },
 
 //
@@ -637,10 +651,10 @@
     // Text input field item
     {
         "class": "text_line_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/text-field.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/text-field@2x.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 5, 4, 3],
-        "content_margin": [3, 3]
+        "content_margin": [6, 6]
     },
 
 //
@@ -650,22 +664,22 @@
     // Bottom panel background
     {
         "class": "panel_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/panel-background.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/panel-background@2x.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0,
-        "content_margin": [2, 3, 2, 1]
+        "content_margin": [3, 4, 3, 2]
     },
     // Quick panel background
     {
         "class": "overlay_control",
         "settings": ["!soda_retina_fix"],
-        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-background.png",
-        "layer0.inner_margin": [12, 6, 12, 15],
+        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-background@2x.png",
+        "layer0.inner_margin": [24, 12, 24, 30],
         "layer0.opacity": 1.0,
-        "layer1.texture": "Theme - Soda/Soda Dark/quick-panel-sections.png",
-        "layer1.inner_margin": [12, 40, 12, 19],
+        "layer1.texture": "Theme - Soda/Soda Dark/quick-panel-sections@2x.png",
+        "layer1.inner_margin": [24, 180, 24, 38],
         "layer1.opacity": 1.0,
-        "content_margin": [11, 8, 11, 17]
+        "content_margin": [17, 12, 17, 27]
     },
     // Quick panel background (Retina fix)
     {
@@ -682,35 +696,44 @@
 
     {
         "class": "quick_panel",
-        "row_padding": [5, 2],
+        "row_padding": [10, 9],
         "layer0.tint": [33, 33, 33],
         "layer0.opacity": 1.0,
-        "dark_content": true
+        "dark_content": true,
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     {
         "class": "quick_panel_row",
-        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row.png",
-        "layer0.inner_margin": [2, 2, 2, 2],
-        "layer0.opacity": 1.0
+        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row@2x.png",
+        "layer0.inner_margin": [4, 4, 4, 4],
+        "layer0.opacity": 1.0,
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     {
         "class": "quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row-selected@2x.png",
+        "layer0.opacity": 1.0
     },
     {
         "class": "quick_panel_label",
         "fg": [210, 210, 210, 255],
         "match_fg": [126, 199, 239, 255],
         "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [166, 229, 255, 255]
+        "selected_match_fg": [166, 229, 255, 255],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     {
         "class": "quick_panel_path_label",
         "fg": [130, 130, 130, 255],
         "match_fg": [220, 220, 220, 255],
         "selected_fg": [175, 175, 175, 255],
-        "selected_match_fg": [220, 220, 220, 255]
+        "selected_match_fg": [220, 220, 220, 255],
+        "font.size": 16.0,
+        "font.face": "Ubuntu"
     },
     {
         "class": "quick_panel_score_label",
@@ -724,14 +747,14 @@
 
     {
         "class": "mini_quick_panel_row",
-        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row@2x.png",
         "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
         "class": "mini_quick_panel_row",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row-selected.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/quick-panel-row-selected@2x.png"
     },
 
 //
@@ -757,7 +780,7 @@
     },
     {
         "class": "table_row",
-        "layer0.texture": "Theme - Soda/Soda Dark/autocomplete-row-selected.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/autocomplete-row-selected@2x.png",
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
@@ -774,51 +797,51 @@
     // Button group middle
     {
         "class": "icon_button_control",
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-middle.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-middle@2x.png",
         "layer0.inner_margin": [6, 6],
         "layer0.opacity": 1.0,
-        "content_margin": [3, 3]
+        "content_margin": [6, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-middle-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-middle-on@2x.png"
     },
     // Button group left
     {
         "class": "icon_button_control",
         "attributes": ["left"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-left.png",
-        "content_margin": [4, 3, 3, 3]
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-left@2x.png",
+        "content_margin": [8, 6, 6, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-left-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-left-on@2x.png"
     },
     // Button group right
     {
         "class": "icon_button_control",
         "attributes": ["right"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-right.png",
-        "content_margin": [3, 3, 4, 3]
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-right@2x.png",
+        "content_margin": [6, 6, 8, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["right", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-right-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-group-right-on@2x.png"
     },
     // Button single
     {
         "class": "icon_button_control",
         "attributes": ["left", "right"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-small.png",
-        "content_margin": [4, 3]
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-small@2x.png",
+        "content_margin": [8, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right", "selected"],
-        "layer0.texture": "Theme - Soda/Soda Dark/btn-small-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/btn-small-on@2x.png"
     },
 
 //
@@ -828,38 +851,38 @@
     // Regex search button
     {
         "class": "icon_regex",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-regex-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-regex-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_regex",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-regex-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-regex-on@2x.png"
     },
     // Case sensitive search button
     {
         "class": "icon_case",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-case-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-case-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-case-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-case-on@2x.png"
     },
     // Match whole word search button
     {
         "class": "icon_whole_word",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-word-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-word-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_whole_word",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-word-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-word-on@2x.png"
     },
 
 //
@@ -869,26 +892,26 @@
     // Show search context button
     {
         "class": "icon_context",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-context-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-context-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_context",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-context-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-context-on@2x.png"
     },
     // Use search buffer
     {
         "class": "icon_use_buffer",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-buffer-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-buffer-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_use_buffer",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-buffer-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-buffer-on@2x.png"
     },
 
 //
@@ -898,38 +921,38 @@
     // Reverse search direction button
     {
         "class": "icon_reverse",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-reverse-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-reverse-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_reverse",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-reverse-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-reverse-on@2x.png"
     },
     // Search wrap button
     {
         "class": "icon_wrap",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-wrap-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-wrap-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_wrap",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-wrap-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-wrap-on@2x.png"
     },
     // Search in selection button
     {
         "class": "icon_in_selection",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-selection-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-selection-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_in_selection",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-selection-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-selection-on@2x.png"
     },
 
 //
@@ -939,14 +962,14 @@
     // Preserve case button
     {
         "class": "icon_preserve_case",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-preserve-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-preserve-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_preserve_case",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-preserve-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-preserve-on@2x.png"
     },
 
 //
@@ -956,14 +979,14 @@
     // Highlight results button
     {
         "class": "icon_highlight",
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-highlight-off.png",
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-highlight-off@2x.png",
         "layer0.opacity": 1.0,
-        "content_margin": [9, 9]
+        "content_margin": [13, 13]
     },
     {
         "class": "icon_highlight",
         "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Soda/Soda Dark/icon-highlight-on.png"
+        "layer0.texture": "Theme - Soda/Soda Dark/icon-highlight-on@2x.png"
     }
 
 ]
