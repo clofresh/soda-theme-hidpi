@@ -29,7 +29,7 @@ While inside the `Packages` directory, clone the theme repository using the comm
 
 ### Download Manually
 
-* Download the files using the GitHub .zip download option
+* Download the files using the GitHub `.zip` download option
 * Unzip the files and rename the folder to `Theme - Soda HiDPI`
 * Copy the folder to your Sublime Text 2 `Packages` directory
 
