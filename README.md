@@ -1,37 +1,34 @@
-# Soda Theme
+# Soda Theme HiDPI
 
-Dark and light custom UI themes for Sublime Text 2.
+Dark UI theme for Sublime Text 2.
+Edited to force HiDPI on Windows environnement, for a convenient theme on HiDPI screens (such as Apple MBP or latest ASUS Zenbooks)
 
-Project site: [http://buymeasoda.github.com/soda-theme/](http://buymeasoda.github.com/soda-theme/)
+Original project site: [http://buymeasoda.github.com/soda-theme/](http://buymeasoda.github.com/soda-theme/)
 
 ## Design
 
-![Soda Light Theme](http://buymeasoda.github.com/soda-theme/images/screenshots/soda-2-light-theme.png?v=4)
+![Soda Dark HiDPI Theme](http://i.imgur.com/UfzCu.png)
 
-![Soda Dark Theme](http://buymeasoda.github.com/soda-theme/images/screenshots/soda-2-dark-theme.png?v=2)
+![Soda Dark Theme (legacy)](http://i.imgur.com/bc7jp.png)
 
 ## Installation
 
-Soda theme is designed to work with the latest [development build](http://www.sublimetext.com/dev) of Sublime Text 2.
-
-### Using Sublime Package Control
-
-If you are using Will Bond's excellent [Sublime Package Control](http://wbond.net/sublime_packages/package_control), you can easily install Soda Theme via the `Package Control: Install Package` menu item. The Soda Theme package is listed as `Theme - Soda` in the packages list.
+Soda theme HiDPI is designed to work with the latest [development build](http://www.sublimetext.com/dev) of Sublime Text 2.
 
 ### Using Git
 
-Alternatively, if you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
+If you are a git user, you can install the theme and keep up to date by cloning the repo directly into your `Packages` directory in the Sublime Text 2 application settings area.
 
 You can locate your Sublime Text 2 `Packages` directory by using the menu item `Preferences -> Browse Packages...`.
 
 While inside the `Packages` directory, clone the theme repository using the command below:
 
-    git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"
+    git clone https://github.com/antwan86/soda-theme-hidpi/ "Theme - Soda HiDPI"
 
 ### Download Manually
 
 * Download the files using the GitHub .zip download option
-* Unzip the files and rename the folder to `Theme - Soda`
+* Unzip the files and rename the folder to `Theme - Soda HiDPI`
 * Copy the folder to your Sublime Text 2 `Packages` directory
 
 ## Activating the theme
@@ -39,12 +36,12 @@ While inside the `Packages` directory, clone the theme repository using the comm
 To configure Sublime Text 2 to use the theme:
 
 * Open your User Settings Preferences file `Sublime Text 2 -> Preferences -> Settings - User`
-* Add (or update) your theme entry to be `"theme": "Soda Light.sublime-theme"` or `"theme": "Soda Dark.sublime-theme"`
+* Add (or update) your theme entry to be `"theme": "Soda Dark HiDPI.sublime-theme"`
 
 ### Example User Settings
 
     {
-        "theme": "Soda Light.sublime-theme"
+        "theme": "Soda Dark HiDPI.sublime-theme"
     }
 
 ## Additional Features
@@ -59,21 +56,11 @@ By default, a square tab style is used. If you'd prefer to use the original curv
 
 ![Soda Tab Styles](http://buymeasoda.github.com/soda-theme/images/features/multiple-tab-styles.png)
 
-### Retina Resolution UI
-
-Soda Theme has been designed to take advantage of retina resolution (high-dpi) displays. Both Soda Light and Soda Dark support retina displays.
-
-![Soda Retina](http://buymeasoda.github.com/soda-theme/images/features/soda-retina.png)
-
-### Theme Customisation
-
-Sublime Text 2 provides an elegant way to tweak existing themes without having to duplicate or maintain a separate copy of the original theme. If there are aspects of Soda Theme that you would like to adjust, take a look at the [theme customisation](https://github.com/buymeasoda/soda-theme/wiki/Theme-customisation) wiki page.
-
 ## Bonus Options
 
 ### Syntax Highlighting Colour Schemes
 
-The Soda Light screenshot uses a modified version of Espresso Tutti Colori and the Soda Dark screenshot uses a modified version of Monokai.
+The Soda Dark screenshot uses a modified version of Monokai.
 
 If you'd like to use the syntax highlighting schemes shown in the screenshots: 
 
@@ -83,7 +70,7 @@ If you'd like to use the syntax highlighting schemes shown in the screenshots:
 
 ### Code Font
 
-The code font shown in the screenshot is Menlo.
+The code font shown in the screenshot is Menlo, font used for UI is Ubuntu
 
 ## Development
 
@@ -93,10 +80,4 @@ While developing the theme, I have documented some [theme challenges and ideas](
 
 ## License
 
-Soda Theme is licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/). You are free to share and remix the theme, however please abide by the license terms when doing so. 
-
-The following details apply to the Creative Commons license "author specified" components:
-
-* Attribution example: Based on Soda Theme by Ian Hill (http://buymeasoda.com/)
-
-* Naming guidelines: If you create and distribute a derivative theme, please give your theme a unique and original name that does not directly include "Soda Theme" (or a close variant) in the main project title, repo name or Package Control name.
+This is a derivative work from Soda Theme by Ian Hill (http://buymeasoda.com/). Soda Theme is licensed under the [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/). You are free to share and remix the theme, however please abide by the license terms when doing so.
