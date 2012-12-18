@@ -72,7 +72,7 @@ If you'd like to use the syntax highlighting schemes shown in the screenshots:
 
 ### Screenshot details
 
-The code font shown in the screenshot is Menlo, font used in UI is Ubuntu. Windows Aero theme has been modified by IumKit.
+The code font shown in the screenshot is Menlo, font used in UI is Ubuntu. Windows Aero theme has been modified by [IumKit](http://iumkit/net), and beautiful Freetype-like anti-aliasing is provided by [GDIPP](http://code.google.com/p/gdipp/).
 
 ## Known Issues
 
