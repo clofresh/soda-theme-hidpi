@@ -110,7 +110,7 @@
 //
 // TAB BUTTONS
 //
-    
+
     // Tab close button
     {
         "class": "tab_close_button",
@@ -189,14 +189,14 @@
 //
 // TAB LABELS
 //
-    
+
     {
         "class": "tab_label",
         "fade": true,
         "fg": [170, 170, 170],
         "shadow_color": [25, 25, 25],
         "shadow_offset": [0, -1],
-        "font.size": 16.0,
+        "font.size": 14.0,
         "font.face": "Ubuntu"
     },
     {
